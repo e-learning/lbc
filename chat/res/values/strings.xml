@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Chat</string>
+    <string name="empty"/>
+    <color name="lineColor">#FFFFFF</color>
+    <color name="textColor">#000000</color>
+    <string name="loginStr">login</string>
+    <string name="radiusStr">radius</string>
+    <string name="sendStr">send</string>
+
+</resources>

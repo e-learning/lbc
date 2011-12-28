@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="fill_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.79"
+            android:fillViewport="true"
+            android:scrollbars="vertical" >
+
+            <TextView
+                android:id="@+id/messages"
+                android:layout_width="fill_parent"
+                android:layout_height="106dp"
+                android:background="@color/lineColor"
+                android:minLines="25"
+                android:text="@string/empty"
+                android:textColor="@color/textColor" />
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:onClick="onLoginClick"
+                android:text="@string/loginStr" />
+
+            <Button
+                android:id="@+id/radius"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRadiusClick"
+                android:text="@string/radiusStr" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="10"
+            android:onClick="onSendClick"
+            android:text="@string/sendStr" />
+
+    </LinearLayout>
+
+</LinearLayout>
